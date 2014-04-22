@@ -23,6 +23,9 @@ ymdNoSpaceFormatString = "%Y%m%d"
 usDateFormat :: Day -> String
 usDateFormat = formatTimeDefault usDateFormatString
 
+isoDateFormat :: Day -> String
+isoDateFormat = formatTimeDefault isoDateFormatString
+
 dayToSQL :: Day -> String
 dayToSQL = formatTimeDefault isoDateFormatString
 
