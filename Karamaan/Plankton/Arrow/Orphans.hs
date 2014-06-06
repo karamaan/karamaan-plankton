@@ -5,7 +5,7 @@ module Karamaan.Plankton.Arrow.Orphans where
 
 import qualified Control.Lens.Tuple as T
 import Control.Lens.Indexed (indexed)
-import Control.Lens.Combinators ((<&>))
+import Control.Lens ((<&>))
 
 -- Oh no!  Orphans!
 -- TODO: I don't know how indexed works.  Is it possible these are
