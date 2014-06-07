@@ -16,6 +16,7 @@ overA l p = arr (uncurry id) <<< second p <<< arr go where
 -- This is %%~ from Control.Lens but I prefer a name rather than symbols
 -- It isn't to do with /Arrow/ lenses per se, but I put it here rather than
 -- starting a new module just for one function.
+-- NB: It's probably better just to use 'traverseOf'
 overf :: Functor f => L.LensLike f s t a b -> (a -> f b) -> s -> f t
 overf = id
 
